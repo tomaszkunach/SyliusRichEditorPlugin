@@ -6,9 +6,9 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
-        "sylius/sylius": ">=1.11 <1.14",
+        "sylius/sylius": "^2.0.0-alpha.2",
         "twig/markdown-extra": "^2.16|^3.12",
-        "twig/extra-bundle": "^2.16|^3.12",
+        "twig/extra-bundle": "^2.16|^3.13",
         "league/commonmark": "^2.5"
     },
     "require-dev": {
