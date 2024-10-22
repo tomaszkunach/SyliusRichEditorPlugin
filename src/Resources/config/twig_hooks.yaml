@@ -1,0 +1,5 @@
+twig_hooks:
+    hooks:
+        'sylius_admin.product.update.content.form':
+            modal: 
+                template: '@MonsieurBizSyliusRichEditorPlugin/Admin/confirm_modal.html.twig'
