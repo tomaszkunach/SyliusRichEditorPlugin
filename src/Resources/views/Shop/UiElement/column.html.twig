@@ -5,12 +5,18 @@
         content
 #}
 {% if element.content|default('') is not empty %}
-<div class="ui grid equal width container">
-    {% set content = monsieurbiz_richeditor_get_elements(element.content) %}
-    {% for column in content %}
-        <div class="column">
-            {{ column | monsieurbiz_richeditor_render_element }}
-        </div>
-    {% endfor %}
+
+{% set content = monsieurbiz_richeditor_get_elements(element.content) %}
+{% set length = content|length %}
+
+<div class="container">
+    <div class="row row-cols-{{ length }}">
+        {% for column in content %}
+            <div class="col">
+                {{ column | monsieurbiz_richeditor_render_element }}
+            </div>
+        {% endfor %}
+    </div>
 </div>
+
 {% endif %}

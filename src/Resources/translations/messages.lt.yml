@@ -1,0 +1,159 @@
+monsieurbiz_richeditor_plugin:
+  ui_element:
+    monsieurbiz.column:
+      title: 'Column Layout Element'
+      description: 'A layout to display elements column by column'
+      field:
+        content: 'Content'
+    monsieurbiz.row:
+      title: 'Row Layout Element'
+      description: 'A layout to display elements row by row'
+      field:
+        content: 'Content'
+    monsieurbiz.html:
+      title: 'HTML Element'
+      description: 'An element with raw data'
+      field:
+        content: 'Content'
+    monsieurbiz.text:
+      title: 'Text Element'
+      description: 'An element with a text content'
+      field:
+        content: 'Content'
+    monsieurbiz.title:
+      title: 'Title Element'
+      short_description: 'A title element'
+      description: 'An element containing the title you want'
+      field:
+        content: 'Content'
+    monsieurbiz.h1:
+      title: '<h1> Title Element'
+      short_description: 'Header level 1'
+      description: 'An element containing the title you want'
+      field:
+        content: 'Content'
+    monsieurbiz.h2:
+      title: '<h2> Title Element'
+      short_description: 'Header level 2'
+      description: 'An element containing the title you want'
+      field:
+        content: 'Content'
+    monsieurbiz.h3:
+      title: '<h3> Title Element'
+      short_description: 'Header level 3'
+      description: 'An element containing the title you want'
+      field:
+        content: 'Content'
+    monsieurbiz.image:
+      title: 'Image Element'
+      short_description: 'An element with an image, an alternative text and a title..'
+      description: 'An element with an image, an alternative text and a title. A link can be added on it.'
+      field:
+        current_image: 'Current image'
+        image: 'Image'
+        alt: 'Alternative text'
+        title: 'Title'
+        link: 'Link'
+    monsieurbiz.quote:
+      title: 'Quote Element'
+      description: 'An element with an author and a content'
+      field:
+        author: 'Author'
+        content: 'Content'
+    monsieurbiz.video:
+      title: 'Video Element'
+      short_description: 'Element with a video and a background video image'
+      description: 'An element with a video file and a background image file rendering before you play the video'
+      field:
+        video: 'Video'
+        image: 'Background image'
+    monsieurbiz.separator:
+      title: 'Separator Element'
+      short_description: 'A separator element'
+      description: 'A separator element. The separator can be a hidden one.'
+      field:
+        hidden: 'Hidden separator'
+    monsieurbiz.button:
+      title: 'Button Element'
+      short_description: 'A button with a text and a link.'
+      description: 'A button with a text and a link.'
+      field:
+        label: 'Label'
+        link: 'Link'
+    monsieurbiz.youtube:
+      title: 'Youtube Element'
+      short_description: 'A Youtube element.'
+      description: 'An element which displays a Youtube video.'
+      field:
+        link: 'Youtube link'
+        width: 'Iframe width'
+        height: 'Iframe height'
+    monsieurbiz.image_collection:
+      title: 'Image Collection Element'
+      short_description: 'An element with multiple images.'
+      description: 'An element with multiple images. A link can be added on each image.'
+      field:
+        images: 'Images list'
+    monsieurbiz.markdown:
+      title: 'Markdown Element'
+      description: 'An element with markdown content'
+      field:
+        content: 'Content'
+  file:
+    change: 'Change file'
+  form:
+    add: 'Add an element'
+    move: 'Move'
+    move_up: 'Move Up'
+    move_down: 'Move Down'
+    edit: 'Edit'
+    delete: 'Delete'
+    close: 'Close'
+    confirm_delete: 'Are you sure to delete this element ?'
+    apply_changes: 'Apply changes'
+    cancel_changes: 'Cancel changes'
+    placeholder: 'Drag widgets in this area'
+    current_image: 'Current image'
+    current_video: 'Current video'
+    current_file: 'Current file'
+    add_element: 'Add %uiElementTitle%'
+    edit_element: 'Edit %uiElementTitle%'
+    cancel: 'Cancel'
+    save: 'Save'
+    add_image: 'Add Image'
+    select_ui_element: 'Select an UI element'
+    align:
+      label: 'Alignment'
+      default: 'Default'
+      left: 'Left'
+      center: 'Center'
+      right: 'Right'
+      justify: 'Justify'
+    level:
+        label: 'Level'
+        default: 'Default'
+        primary: 'Primary'
+        secondary: 'Secondary'
+        tertiary: 'Tertiary'
+    clipboard: 'Clipboard'
+    paste_from_clipboard: 'Paste from clipboard'
+    paste_all_from_clipboard: 'Paste all elements'
+    copy_all_from_clipboard: 'Copy all elements'
+    trash_all: 'Remove all elements'
+    copied: 'Copied!'
+    copy: 'Copy'
+  action:
+    new: 'Toggle available widgets'
+    preview: 'Preview'
+  error:
+    cannot_parse_json: 'Cannot parse the current content'
+    cannot_find_type: 'Cannot find type for some UI Elements'
+    cannot_upload_image: 'Cannot upload the image. The file may be too large or have incorrect format.'
+    ajax_error: 'There is a technical problem. Please contact your administrator.'
+    unallowed_uielement: 'Element not allowed here'
+  ui:
+    disabled: 'Disabled'
+  common:
+    link_type: 'Link type'
+    internal_link: 'Internal link'
+    external_link: 'External link'

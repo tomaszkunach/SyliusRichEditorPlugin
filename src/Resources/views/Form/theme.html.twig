@@ -1,4 +1,4 @@
-{% extends '@SyliusAdmin/Form/theme.html.twig' %}
+{% extends '@SyliusAdmin/shared/form_theme.html.twig' %}
 
 {% block monsieurbiz_rich_editor_plugin_image_widget %}
     {% set current_file_path = monsieurbiz_richeditor_get_current_file_path(form.vars.full_name) %}
@@ -8,7 +8,7 @@
                 <small>{{ 'monsieurbiz_richeditor_plugin.form.current_image' | trans }}</small><br />
                 <img src="{{ current_file_path|imagine_filter('monsieurbiz_rich_editor_uploaded_image', {"relative_resize": {"widen": filterWidth }}) }}" alt="" style="max-width: 300px;max-height: 300px;" />
             </p>
-            <button type="button" class="ui button" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
+            <button type="button" class="btn btn" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
                 {{ 'monsieurbiz_richeditor_plugin.file.change' | trans }}
             </button>
             <input type="hidden" name="{{ form.vars.full_name }}" value="{{ current_file_path }}" />
@@ -29,7 +29,7 @@
                     <source src="{{ current_file_path }}" type="video/{{ current_file_path|split('.')|last }}">
                 </video>
             </p>
-            <button type="button" class="ui button" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
+            <button type="button" class="btn btn" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
                 {{ 'monsieurbiz_richeditor_plugin.file.change' | trans }}
             </button>
             <input type="hidden" name="{{ form.vars.full_name }}" value="{{ current_file_path }}" />
@@ -41,7 +41,6 @@
 {% endblock %}
 
 {% block file_widget %}
-
     {% set current_file_path = monsieurbiz_richeditor_get_current_file_path(form.vars.full_name) %}
     {% if form.vars.valid and current_file_path is not empty %}
         <div>
@@ -65,7 +64,7 @@
                     </a>
                 </p>
             {% endif %}
-            <button type="button" class="ui button" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
+            <button type="button" class="btn btn" onclick="monsieurBizRichEditorRemoveFile('{{ form.vars.full_name | escape }}');">
                 {{ 'monsieurbiz_richeditor_plugin.file.change' | trans }}
             </button>
 

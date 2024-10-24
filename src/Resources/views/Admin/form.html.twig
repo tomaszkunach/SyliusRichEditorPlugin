@@ -1,32 +1,32 @@
 {% form_theme form '@MonsieurBizSyliusRichEditorPlugin/Form/theme.html.twig' %}
 
-<div class="content">
-    <div class="ui stackable two column grid">
-        <div class="column">
-            <h2 class="ui header">
-                <i class="{{ uiElement.icon | escape('html_attr') }} circular icon"></i>
-                <div class="content">
-                    {% if isEdition %}
-                        {{ 'monsieurbiz_richeditor_plugin.form.edit_element' | trans({'%uiElementTitle%': uiElement.title | trans}) }}
-                    {% else %}
-                        {{ 'monsieurbiz_richeditor_plugin.form.add_element' | trans({'%uiElementTitle%': uiElement.title | trans}) }}
-                    {% endif %}
-                    <div class="sub header">{{ uiElement.description | trans }}</div>
-                </div>
+{% from '@SyliusAdmin/shared/helper/icon.html.twig' import icon %}
+
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2 class="h2">
+                {{ icon({ icon: 'eye', class: 'icon' }) }}
+                {% if isEdition %}
+                    {{ 'monsieurbiz_richeditor_plugin.form.edit_element' | trans({'%uiElementTitle%': uiElement.title | trans}) }}
+                {% else %}
+                    {{ 'monsieurbiz_richeditor_plugin.form.add_element' | trans({'%uiElementTitle%': uiElement.title | trans}) }}
+                {% endif %}
+                <blockquote class="blockquote">
+                    {{ uiElement.description | trans }}
+                </blockquote>
             </h2>
         </div>
-        <div class="middle aligned column">
-            <div class="ui right floated buttons">
-                <div class="sm:uie-mt-xs">
-                    <button class="ui button js-uie-cancel" type="button">
-                        <i class="ban icon"></i>
-                        {{ 'monsieurbiz_richeditor_plugin.form.cancel' | trans }}
-                    </button>
-                    <button class="ui primary button js-uie-save" type="button">
-                        <i class="save outline icon"></i>
-                        {{ 'monsieurbiz_richeditor_plugin.form.save' | trans }}
-                    </button>
-                </div>
+        <div class="col">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button class="btn btn js-uie-cancel" type="button">
+                    {{ icon({ icon: 'trash_x', class: 'icon' }) }}
+                    {{ 'monsieurbiz_richeditor_plugin.form.cancel' | trans }}
+                </button>
+                <button class="btn btn-primary button js-uie-save" type="button">
+                    {{ icon({ icon: 'check', class: 'icon' }) }}
+                    {{ 'monsieurbiz_richeditor_plugin.form.save' | trans }}
+                </button>
             </div>
         </div>
     </div>

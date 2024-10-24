@@ -1,0 +1,5 @@
+twig_hooks:
+    hooks:
+        'sylius_admin.base#javascripts':
+            rich_editor:
+                template: '@MonsieurBizSyliusRichEditorPlugin/Admin/app.html.twig'
