@@ -1,7 +1,4 @@
 <script src="{{ asset('bundles/monsieurbizsyliusricheditorplugin/js/rich-editor.js') }}"></script>
-<link rel="stylesheet" href="{{ asset('bundles/monsieurbizsyliusricheditorplugin/css/rich-editor.css') }}">
-
-{% from '@SyliusAdmin/shared/helper/icon.html.twig' import icon %}
 
 <div class="modal" id="monsieurbiz-rich-editor-confirmation-modal" tabindex="-1" aria-hidden="true">
     <div class="modal-dialog">
@@ -31,13 +28,13 @@
 <div class="text-center compact tiny menu pt-6 pb-6">
     <button data-position="{{position}}" class="btn btn js-uie-add" type="button">
         {% endverbatim %}
-            {{ icon({ icon: 'plus', class: 'icon' }) }}
+            {{ ux_icon('tabler:plus', { 'class': 'icon' }) }}
             {{ "monsieurbiz_richeditor_plugin.form.add"|trans }}
         {% verbatim %}
     </button>
     <button data-position="{{position}}" class="btn btn js-uie-paste d-none" type="button">
         {% endverbatim %}
-            {{ icon({ icon: 'archive', class: 'icon' }) }}
+            {{ ux_icon('tabler:archive', { 'class': 'icon' }) }}
             {{ "monsieurbiz_richeditor_plugin.form.paste_from_clipboard"|trans }}
         {% verbatim %}
     </a>
@@ -57,19 +54,19 @@
             </h3>
             <div class="btn-group" role="group">
                 <button class="btn btn-sm btn-outline-danger js-uie-delete" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.delete'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ icon({ icon: 'trash_x', class: 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:x', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn btn-outline-success js-uie-edit" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.edit'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ icon({ icon: 'pencil', class: 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:pencil', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn-outline-dark js-uie-up" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.move_up'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ icon({ icon: 'chevron_up', class: 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:arrow-move-up', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn-outline-dark js-uie-down" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.move_down'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ icon({ icon: 'chevron_down', class: 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:arrow-move-down', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn btn-outline-info js-uie-copy d-none" type="button" data-alternate-text="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.copied'|trans }}{% verbatim %}" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.copy'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ icon({ icon: 'mail', class: 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:mail', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
             </div>
         </div>
@@ -83,13 +80,13 @@
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <div class="btn-group" role="group">
             <button class="btn btn-sm btn btn-outline-info js-uie-tools-copy-all d-none" type="button" data-alternate-text="{{ 'monsieurbiz_richeditor_plugin.form.copied'|trans }}" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.copy_all_from_clipboard"|trans }}">
-                {{ icon({ icon: 'mail', class: 'icon' }) }}
+                {{ ux_icon('tabler:mail', { 'class': 'icon' }) }}
             </button>
             <button class="btn btn-sm btn-outline-success js-uie-tools-paste-all d-none" type="button" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.paste_all_from_clipboard"|trans }}">
-                {{ icon({ icon: 'archive', class: 'icon' }) }}
+                {{ ux_icon('tabler:archive', { 'class': 'icon' }) }}
             </button>
             <button class="btn btn-sm btn-outline-danger js-uie-tools-trash-all" type="button" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.trash_all"|trans }}">
-                {{ icon({ icon: 'trash_x', class: 'icon' }) }}
+                {{ ux_icon('tabler:x', { 'class': 'icon' }) }}
             </button>
         </div>
     </div>
@@ -103,7 +100,7 @@
 <div class="col uie-card js-uie-new p-2 m-1 border">
     <div class="content left aligned">
         <div class="h3 text-center">
-            {{ icon({ icon: 'icon', class: 'icon' }) }}
+            {{ ux_icon('tabler:icon', { 'class': 'icon' }) }}
             {{title}}
         </div>
         {{#wireframe}}
@@ -133,7 +130,7 @@
             <div class="uie-ml-md">
                 <button class="btn btn js-uie-panels-close-{{uid}}" type="button">
                     {% endverbatim %}
-                        {{ icon({ icon: 'trash_x', class: 'icon' }) }}
+                        {{ ux_icon('tabler:x', { 'class': 'icon' }) }}
                         {{ 'monsieurbiz_richeditor_plugin.form.close'|trans }}
                     {% verbatim %}
                 </button>

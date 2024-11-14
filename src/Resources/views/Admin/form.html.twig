@@ -1,12 +1,10 @@
 {% form_theme form '@MonsieurBizSyliusRichEditorPlugin/Form/theme.html.twig' %}
 
-{% from '@SyliusAdmin/shared/helper/icon.html.twig' import icon %}
-
 <div class="container">
     <div class="row">
         <div class="col">
             <h2 class="h2">
-                {{ icon({ icon: 'eye', class: 'icon' }) }}
+                {{ ux_icon('tabler:eye', {'class': 'icon' }) }}
                 {% if isEdition %}
                     {{ 'monsieurbiz_richeditor_plugin.form.edit_element' | trans({'%uiElementTitle%': uiElement.title | trans}) }}
                 {% else %}
@@ -20,11 +18,11 @@
         <div class="col">
             <div class="d-grid gap-2 d-md-flex justify-content-md-end">
                 <button class="btn btn js-uie-cancel" type="button">
-                    {{ icon({ icon: 'trash_x', class: 'icon' }) }}
+                    {{ ux_icon('tabler:x', {'class': 'icon' }) }}
                     {{ 'monsieurbiz_richeditor_plugin.form.cancel' | trans }}
                 </button>
                 <button class="btn btn-primary button js-uie-save" type="button">
-                    {{ icon({ icon: 'check', class: 'icon' }) }}
+                    {{ ux_icon('tabler:check', {'class': 'icon' }) }}
                     {{ 'monsieurbiz_richeditor_plugin.form.save' | trans }}
                 </button>
             </div>
