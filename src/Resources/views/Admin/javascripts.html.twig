@@ -34,7 +34,7 @@
     </button>
     <button data-position="{{position}}" class="btn btn js-uie-paste d-none" type="button">
         {% endverbatim %}
-            {{ ux_icon('tabler:archive', { 'class': 'icon' }) }}
+            {{ ux_icon('tabler:clipboard-plus', { 'class': 'icon' }) }}
             {{ "monsieurbiz_richeditor_plugin.form.paste_from_clipboard"|trans }}
         {% verbatim %}
     </a>
@@ -57,7 +57,7 @@
                     {% endverbatim %}{{ ux_icon('tabler:x', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn btn-outline-success js-uie-edit" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.edit'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ ux_icon('tabler:pencil', { 'class': 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:edit', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn-outline-dark js-uie-up" type="button" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.move_up'|trans }}{% verbatim %}" data-inverted>
                     {% endverbatim %}{{ ux_icon('tabler:arrow-move-up', { 'class': 'icon' }) }}{% verbatim %}
@@ -66,7 +66,7 @@
                     {% endverbatim %}{{ ux_icon('tabler:arrow-move-down', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
                 <button class="btn btn-sm btn btn-outline-info js-uie-copy d-none" type="button" data-alternate-text="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.copied'|trans }}{% verbatim %}" data-tooltip="{% endverbatim %}{{ 'monsieurbiz_richeditor_plugin.form.copy'|trans }}{% verbatim %}" data-inverted>
-                    {% endverbatim %}{{ ux_icon('tabler:mail', { 'class': 'icon' }) }}{% verbatim %}
+                    {% endverbatim %}{{ ux_icon('tabler:clipboard-copy', { 'class': 'icon' }) }}{% verbatim %}
                 </button>
             </div>
         </div>
@@ -80,10 +80,10 @@
     <div class="d-grid gap-2 d-md-flex justify-content-md-end">
         <div class="btn-group" role="group">
             <button class="btn btn-sm btn btn-outline-info js-uie-tools-copy-all d-none" type="button" data-alternate-text="{{ 'monsieurbiz_richeditor_plugin.form.copied'|trans }}" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.copy_all_from_clipboard"|trans }}">
-                {{ ux_icon('tabler:mail', { 'class': 'icon' }) }}
+                {{ ux_icon('tabler:clipboard-copy', { 'class': 'icon' }) }}
             </button>
             <button class="btn btn-sm btn-outline-success js-uie-tools-paste-all d-none" type="button" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.paste_all_from_clipboard"|trans }}">
-                {{ ux_icon('tabler:archive', { 'class': 'icon' }) }}
+                {{ ux_icon('tabler:clipboard-plus', { 'class': 'icon' }) }}
             </button>
             <button class="btn btn-sm btn-outline-danger js-uie-tools-trash-all" type="button" data-tooltip="{{ "monsieurbiz_richeditor_plugin.form.trash_all"|trans }}">
                 {{ ux_icon('tabler:x', { 'class': 'icon' }) }}
