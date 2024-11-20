@@ -5,7 +5,7 @@
         content
 #}
 {% if element.content|default('') is not empty %}
-<div class="ui grid equal width container">
+<div class="container">
     {% set content = monsieurbiz_richeditor_get_elements(element.content) %}
     {% for column in content %}
         <div class="row">

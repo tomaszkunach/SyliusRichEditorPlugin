@@ -7,5 +7,5 @@
 #}
 {% set align = element.align is defined and element.align is not empty ? element.align : 'inherit' %}
 {% if element is not empty %}
-    <div class="ui huge header" style="text-align: {{align}};">{{ element.content }}</div>
+    <div class="h1" style="text-align: {{align}};">{{ element.content }}</div>
 {% endif %}

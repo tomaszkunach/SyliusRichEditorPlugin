@@ -1,6 +1,5 @@
 imports:
     - { resource: "services.yaml" }
-    - { resource: "sylius/ui.yaml" }
     - { resource: "richeditor.yaml" }
     - { resource: 'images.yaml' }
 
